@@ -7,6 +7,8 @@ import PlaceOrder from './pages/placeorder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import { useState } from 'react'
 import LoginPopup from './components/LoginPopup/LoginPopup'
+import Verify from './pages/verify/Verify'
+import MyOrders from './pages/myOrders/MyOrders'
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/place-order' element={<PlaceOrder />} />
+          <Route path='/verify' element={<Verify />} />
+          <Route path='/myorders' element={<MyOrders />} />
         </Routes>
       </div>
       <Footer />
