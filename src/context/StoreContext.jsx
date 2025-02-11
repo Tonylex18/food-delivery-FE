@@ -6,9 +6,12 @@ export const StoreContext = createContext(null)
 const StoreContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({});
-    const url = import.meta.env.VITE_API_URL;
+    // const url = import.meta.env.VITE_API_URL;
+    const url = "https://food-delivery-be-5t80.onrender.com"; 
     const [token, setToken] = useState("");
     const [food_list, setFoodList] = useState([]);
+
+    console.log(url);
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]) {
